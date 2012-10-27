@@ -1,0 +1,6 @@
+name: FeatureBlock
+description: Blocks unwanted Minecraft features
+main: tk.nekotech.featureblock.FeatureBlock
+version: 0.1
+website: http://dev.nekotech.tk
+author: jamietech
