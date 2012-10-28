@@ -7,6 +7,7 @@ import org.bukkit.plugin.Plugin;
 
 public class Config {
     // Mob locks
+    public static boolean MOB_BAT = true;
     public static boolean MOB_BLAZE = true;
     public static boolean MOB_CAVESPIDER = true;
     public static boolean MOB_CHICKEN = true;
@@ -30,6 +31,7 @@ public class Config {
     public static boolean MOB_SPIDER = true;
     public static boolean MOB_SQUID = true;
     public static boolean MOB_VILLAGER = true;
+    public static boolean MOB_WITCH = true;
     public static boolean MOB_WOLF = true;
     public static boolean MOB_ZOMBIE = true;
     // Mob creation locks
@@ -38,6 +40,7 @@ public class Config {
     public static boolean MOB_CREATE_WITHER = true;
     // Weather lock
     public static boolean WEATHER_RAIN = true;
+    public static boolean WEATHER_LIGHTNING = true;
     // Vehicle locks
     public static boolean VEHICLE_BOAT_PLACE = true;
     public static boolean VEHICLE_BOAT_ENTER = true;
@@ -46,6 +49,9 @@ public class Config {
     public static boolean VEHICLE_MINECART_PLACE = true;
     public static boolean VEHICLE_MINECART_ENTER = true;
     public static boolean VEHICLE_MINECART_DESTROYONEXIT = false;
+    // Portal locks
+    public static boolean PORTAL_END = true;
+    public static boolean PORTAL_NETHER = true;
 
     public static void load(final Plugin plugin) {
         final FileConfiguration conf = plugin.getConfig();

@@ -4,3 +4,19 @@ main: tk.nekotech.featureblock.FeatureBlock
 version: 0.1
 website: http://dev.nekotech.tk
 author: jamietech
+
+commands:
+  featureblock:
+    description: Reloads featureblock configuration.
+    aliases: fb
+    permission: featureblock.command
+    permission-message: You do not have permission.
+
+permissions:
+  featureblock.*:
+    description: Grants access to all featureblock permissions ever.
+    default: false
+    children:
+      featureblock.command: true
+  featureblock.command:
+    description: Grants access to /featureblock

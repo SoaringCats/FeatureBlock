@@ -31,6 +31,11 @@ public class CreatureSpawn extends JListen {
                 }
         }
         switch (event.getEntityType()) {
+            case BAT:
+                if (!Config.MOB_BAT) {
+                    event.setCancelled(true);
+                }
+                break;
             case BLAZE:
                 if (!Config.MOB_BLAZE) {
                     event.setCancelled(true);
@@ -143,6 +148,11 @@ public class CreatureSpawn extends JListen {
                 break;
             case VILLAGER:
                 if (!Config.MOB_VILLAGER) {
+                    event.setCancelled(true);
+                }
+                break;
+            case WITCH:
+                if (!Config.MOB_WITCH) {
                     event.setCancelled(true);
                 }
                 break;
