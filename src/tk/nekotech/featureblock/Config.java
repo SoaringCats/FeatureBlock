@@ -35,7 +35,6 @@ public class Config {
     // Mob creation locks
     public static boolean MOB_CREATE_SNOWMAN = true;
     public static boolean MOB_CREATE_IRONGOLEM = true;
-    @NotYetImplemented("This feature is available in 1.4; Bukkit is on 1.3")
     public static boolean MOB_CREATE_WITHER = true;
     // Weather lock
     public static boolean WEATHER_RAIN = true;

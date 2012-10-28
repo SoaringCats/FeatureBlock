@@ -25,6 +25,10 @@ public class CreatureSpawn extends JListen {
                     event.setCancelled(true);
                 }
                 break;
+            case BUILD_WITHER:
+                if (!Config.MOB_CREATE_WITHER) {
+                    event.setCancelled(true);
+                }
         }
         switch (event.getEntityType()) {
             case BLAZE:
