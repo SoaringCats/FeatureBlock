@@ -13,17 +13,17 @@ public class WeatherEvents extends JListen {
     }
 
     @EventHandler
-    public void onWeatherChange(final WeatherChangeEvent event) {
-        if (event.toWeatherState() && !Config.WEATHER_RAIN) {
+    public void onLightningStrike(final LightningStrikeEvent event) {
+        if (!Config.WEATHER_LIGHTNING) {
             event.setCancelled(true);
-            event.getWorld().setThundering(false);
         }
     }
 
     @EventHandler
-    public void onLightningStrike(final LightningStrikeEvent event) {
-        if (!Config.WEATHER_LIGHTNING) {
+    public void onWeatherChange(final WeatherChangeEvent event) {
+        if (event.toWeatherState() && !Config.WEATHER_RAIN) {
             event.setCancelled(true);
+            event.getWorld().setThundering(false);
         }
     }
 }

@@ -7,15 +7,15 @@ import org.bukkit.command.CommandSender;
 import tk.nekotech.featureblock.FeatureBlock;
 
 public class FeatureBlockCommand implements CommandExecutor {
-    private FeatureBlock fb;
+    private final FeatureBlock fb;
 
-    public FeatureBlockCommand(FeatureBlock fb) {
+    public FeatureBlockCommand(final FeatureBlock fb) {
         this.fb = fb;
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        fb.reloadConfig();
+    public boolean onCommand(final CommandSender sender, final Command cmd, final String label, final String[] args) {
+        this.fb.reloadConfig();
         sender.sendMessage(ChatColor.RED + "Reloaded FeatureBlock configuration.");
         return true;
     }

@@ -7,13 +7,13 @@ import tk.nekotech.featureblock.FeatureBlock;
 import tk.nekotech.featureblock.JListen;
 
 public class PortalCreate extends JListen {
-    public PortalCreate(FeatureBlock fb) {
+    public PortalCreate(final FeatureBlock fb) {
         super(fb);
     }
 
     @SuppressWarnings("incomplete-switch")
     @EventHandler
-    public void onPortalCreate(EntityCreatePortalEvent event) {
+    public void onPortalCreate(final EntityCreatePortalEvent event) {
         switch (event.getPortalType()) {
             case ENDER:
                 if (!Config.PORTAL_END) {
